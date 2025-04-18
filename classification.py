@@ -31,15 +31,15 @@ def scroll_to_bottom(driver, max_scrolls=300):
 
 # 카테고리
 category_mapping = {
-    # 'Beauty': '1',
-    # 'Food': '2',
-    #  'Fashion': '3',
-    #  'Life': '4',
-    #'Trip': '5',
-    # 'Kids': '6',
-    # 'Tech': '7',
-    #'hobby': '8',
-    'social': '9'
+    'Beauty':  '1',
+    'Food':    '2',
+    'Fashion': '3',
+    'Life':    '4',
+    'Trip':    '5',
+    'Kids':    '6',
+    'Tech':    '7',
+    'hobby':   '8',
+    'social':  '9'
 }
 
 # 크롤링 시작
