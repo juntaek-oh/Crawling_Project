@@ -8,7 +8,7 @@ word_to_add = 'Trip'  # 추가할 단어
 # CSV 파일을 데이터프레임으로 로드
 df = pd.read_csv(input_file)
 
-# 새로운 열 'Category' 추가 및 'Culture' 값 설정
+# 새로운 열 'category' 추가 및 'Culture' 값 설정
 df['category'] = word_to_add
 
 # 수정된 데이터를 새 CSV 파일로 저장
