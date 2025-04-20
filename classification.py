@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 스크롤 함수
-def scroll_to_bottom(driver, max_scrolls=100):
+def scroll_to_bottom(driver, max_scrolls=300):
     scroll_count = 0
     last_height = driver.execute_script("return document.body.scrollHeight")
 
@@ -31,15 +31,15 @@ def scroll_to_bottom(driver, max_scrolls=100):
 
 # 카테고리
 category_mapping = {
-    # 'Beauty': '1',
-    # 'Food': '2',
-     'Fashion': '3',
-     'Life': '4',
-    #'Trip': '5',
-    # 'Kids': '6',
-    # 'Tech': '7',
-    # 'hobby': '8',
-    # 'social': '9'
+    'Beauty':  '1',
+    'Food':    '2',
+    'Fashion': '3',
+    'Life':    '4',
+    'Trip':    '5',
+    'Kids':    '6',
+    'Tech':    '7',
+    'hobby':   '8',
+    'social':  '9'
 }
 
 # 크롤링 시작
@@ -67,7 +67,7 @@ for category_name, category_code in category_mapping.items():
 
     # 스크롤 실행
     try:
-        scroll_to_bottom(driver, max_scrolls=100)
+        scroll_to_bottom(driver, max_scrolls=300)
     except Exception as e:
         print(f"스크롤 중 에러 발생: {e}")
 
