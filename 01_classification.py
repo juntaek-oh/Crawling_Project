@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 스크롤 함수
-def scroll_to_bottom(driver, max_scrolls=300):
+def scroll_to_bottom(driver, max_scrolls):
     scroll_count = 0
     last_height = driver.execute_script("return document.body.scrollHeight")
 
@@ -31,13 +31,13 @@ def scroll_to_bottom(driver, max_scrolls=300):
 
 # 카테고리
 category_mapping = {
-    'Beauty':  '1',
-    'Food':    '2',
-    'Fashion': '3',
-    'Life':    '4',
-    'Trip':    '5',
-    'Kids':    '6',
-    'Tech':    '7',
+    # 'Beauty':  '1',
+    # 'Food':    '2',
+    # 'Fashion': '3',
+    # 'Life':    '4',
+    # 'Trip':    '5',
+    # 'Kids':    '6',
+    # 'Tech':    '7',
     'Hobby':   '8',
     'Culture':  '9'
 }
