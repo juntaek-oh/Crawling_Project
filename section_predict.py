@@ -10,10 +10,11 @@ import re
 df = pd.read_csv('./crawling_data/shopping_category_titles.csv')
 df.drop_duplicates(inplace=True)
 df.reset_index(drop=True, inplace=True)
-print(df.head())
-df.info()
-print(df.category.value_counts())
+print(df.head()) # 데이터 앞부분 출력
+df.info() # 데이터 정보 출력
+print(df.category.value_counts()) # 카테고리별로 데이터 몇개 있는지?
 
+# 제목(입력데이터), 카테고리(라벨)
 X = df.titles
 Y = df.category
 
