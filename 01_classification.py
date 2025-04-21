@@ -38,8 +38,8 @@ category_mapping = {
     'Trip':    '5',
     'Kids':    '6',
     'Tech':    '7',
-    'hobby':   '8',
-    'social':  '9'
+    'Hobby':   '8',
+    'Social':  '9'
 }
 
 # 크롤링 시작
@@ -90,7 +90,7 @@ for category_name, category_code in category_mapping.items():
 
     # CSV 저장
     df_titles = pd.DataFrame(unique_titles, columns=['titles'])
-    file_path = f'./crawling_data/shoping_category_{category_name}.csv'
+    file_path = f'./crawling_data/shopping_category_{category_name}.csv'
     df_titles.to_csv(file_path, index=False)
     print(f"{len(df_titles)}개의 고유 제목을 {file_path}에 저장 완료")
 

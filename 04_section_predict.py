@@ -52,7 +52,7 @@ for i in range(len(tokened_x)):
 x_pad = pad_sequences(tokened_x, 14)
 print(x_pad)
 
-model = load_model('./models/shopping_section_classification_model_0.7682043313980103.h5')
+model = load_model('./models/shopping_section_classification_model_0.7720167636871338.h5')
 preds = model.predict(x_pad)
 print(preds)
 
