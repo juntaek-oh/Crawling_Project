@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 스크롤 함수
-def scroll_to_bottom(driver, max_scrolls=300):
+def scroll_to_bottom(driver, max_scrolls):
     scroll_count = 0
     last_height = driver.execute_script("return document.body.scrollHeight")
 
@@ -38,8 +38,8 @@ category_mapping = {
     'Trip':    '5',
     'Kids':    '6',
     'Tech':    '7',
-    'hobby':   '8',
-    'social':  '9'
+    'Hobby':   '8',
+    'Social':  '9'
 }
 
 # 크롤링 시작
@@ -47,13 +47,14 @@ for category_name, category_code in category_mapping.items():
     start = time.time()
     print(f"===== {category_name} 카테고리 크롤링 시작 =====")
 
-    # Selenium 설정
+    # Selenium 옵션 설정
     options = ChromeOptions()
     options.add_argument('lang=ko_KR')
     # options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
 
+    # chrome 드라이버 실행
     service = ChromeService(executable_path=ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
@@ -67,7 +68,7 @@ for category_name, category_code in category_mapping.items():
 
     # 스크롤 실행
     try:
-        scroll_to_bottom(driver, max_scrolls=300)
+        scroll_to_bottom(driver, 300) # 최대 300번 스크롤
     except Exception as e:
         print(f"스크롤 중 에러 발생: {e}")
 
@@ -77,10 +78,11 @@ for category_name, category_code in category_mapping.items():
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     title_elements = soup.find_all('span', class_='VideoTitle_wrap_fuxqM VideoTitle_ellipsis2_KBkev BroadcastUnderCard_title_hsd54 VideoTitle_size_s_Imup5 VideoTitle_is_fix_height_GKDL1')  # 클래스 이름 확인 필요
 
+    # 페이지에 있는 제목을 하나씩 가져옴
     for element in title_elements:
         title = element.get_text(strip=True)
         if title:
-            titles.append(title)
+            titles.append((title, category_name)) # 제목을 하나씩 리스트에 저장
             if len(titles) % 50 == 0:
                 print(f"현재 {len(titles)}개 제목 수집됨")
 
@@ -89,8 +91,8 @@ for category_name, category_code in category_mapping.items():
     print(f"총 {len(unique_titles)}개 제목 수집 완료 (중복 제거 전: {len(titles)}, 후: {len(unique_titles)})")
 
     # CSV 저장
-    df_titles = pd.DataFrame(unique_titles, columns=['titles'])
-    file_path = f'./crawling_data/shoping_category_{category_name}.csv'
+    df_titles = pd.DataFrame(unique_titles, columns=['titles', 'category'])
+    file_path = f'./crawling_data/shopping_category_{category_name}.csv'
     df_titles.to_csv(file_path, index=False)
     print(f"{len(df_titles)}개의 고유 제목을 {file_path}에 저장 완료")
 
