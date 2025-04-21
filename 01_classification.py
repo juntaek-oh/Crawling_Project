@@ -80,7 +80,7 @@ for category_name, category_code in category_mapping.items():
     for element in title_elements:
         title = element.get_text(strip=True)
         if title:
-            titles.append(title)
+            titles.append((title,category_name))
             if len(titles) % 50 == 0:
                 print(f"현재 {len(titles)}개 제목 수집됨")
 
@@ -89,7 +89,7 @@ for category_name, category_code in category_mapping.items():
     print(f"총 {len(unique_titles)}개 제목 수집 완료 (중복 제거 전: {len(titles)}, 후: {len(unique_titles)})")
 
     # CSV 저장
-    df_titles = pd.DataFrame(unique_titles, columns=['titles'])
+    df_titles = pd.DataFrame(unique_titles, columns=['titles','category'])
     file_path = f'./crawling_data/shopping_category_{category_name}.csv'
     df_titles.to_csv(file_path, index=False)
     print(f"{len(df_titles)}개의 고유 제목을 {file_path}에 저장 완료")
