@@ -39,7 +39,7 @@ category_mapping = {
     'Kids':    '6',
     'Tech':    '7',
     'Hobby':   '8',
-    'Social':  '9'
+    'Culture':  '9'
 }
 
 # 크롤링 시작
