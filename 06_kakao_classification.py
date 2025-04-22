@@ -94,7 +94,7 @@ for category_name, category_code in category_mapping.items():
 
     # CSV 저장
     df_titles = pd.DataFrame(unique_titles, columns=['titles','category'])
-    file_path = f'./crawling_test_data/test_shopping_category_{category_name}.csv'
+    file_path = f'./crawling_kakao_data/kakao_shopping_category_{category_name}.csv'
     df_titles.to_csv(file_path, index=False)
     print(f"{len(df_titles)}개의 고유 제목을 {file_path}에 저장 완료")
 
