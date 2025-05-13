@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>441</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>맑은 고딕</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>한컴 고딕</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>카테고리 분류기</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>라이브 쇼핑 제목 입력:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_input">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QLineEdit {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>&quot;쇼핑 제목을 입력하세요&quot; </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_predict">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>예측하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_clear">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>220</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #c0392b;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>초기화</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="label_result">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>411</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QLineEdit {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>                예측 카테고리 :</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
