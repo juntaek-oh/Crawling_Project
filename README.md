@@ -1,5 +1,10 @@
 # Crawling Project
 
+<img width="627" height="429" alt="image" src="https://github.com/user-attachments/assets/e8436bf2-4d77-47a9-9d16-a3b10ad6c434" />
+
+<img width="622" height="490" alt="image" src="https://github.com/user-attachments/assets/f1110972-c389-43e7-bc24-4ed34491e740" />
+
+
 **웹 데이터 크롤링 + 전처리 + 분류 모델까지 한 번에 수행하는 데이터 수집·분석 프로젝트**  
 다양한 웹사이트 데이터를 수집하고, 자동으로 전처리 및 머신러닝 모델을 학습하여 카테고리 예측까지 가능하게 구성되었습니다.
 
