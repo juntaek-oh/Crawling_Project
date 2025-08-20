@@ -4,13 +4,15 @@
 <td width="50%">
     
 ### 메인 분류 인터페이스
-![제목 없는 디자인](https://github.com/user-attachments/assets/e67f9b51-3dc1-45b3-9949-296f69f56d91)
+![제목 없는 디자인_cropped](https://github.com/user-attachments/assets/a6dda7c0-da7b-416f-a1ca-b2a12331b0b9)
+
 
 </td>
 <td width="50%">
     
 ### 실시간 예측 시스템
-![제목 없는 디자인 (1)](https://github.com/user-attachments/assets/2b75d794-c021-43f1-bc70-34b64a13b1af)
+![제목 없는 디자인 (1)_cropped](https://github.com/user-attachments/assets/8bdd744d-81da-43ba-ba13-77a96ddbe2e6)
+
 
 </td>
 </tr>
@@ -21,13 +23,15 @@
 <td width="50%">
 
 ### 실시간 예측 시스템
-![제목 없는 디자인 (2)](https://github.com/user-attachments/assets/02c4632c-ee4d-460b-bd4e-c7655be2bf5b)
+![제목 없는 디자인 (2)_cropped](https://github.com/user-attachments/assets/276de70e-f957-46f2-9e34-fcca8f0845bd)
+
 
 </td>
 <td width="50%">
     
 ### 실시간 예측 시스템 
-![제목 없는 디자인 (3)](https://github.com/user-attachments/assets/2ce26b42-8fd0-41b4-ba55-89cf90911a58)
+![제목 없는 디자인 (3)_cropped](https://github.com/user-attachments/assets/9b35348b-9a8e-43a7-af20-453f789caf21)
+
 
 </td>
 </tr>
