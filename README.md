@@ -4,12 +4,14 @@
 <td width="50%">
     
 ### 메인 분류 인터페이스
-![classification_main](https://github.com/user-attachments/assets/your-classification-main-gif)
+![제목 없는 디자인](https://github.com/user-attachments/assets/e67f9b51-3dc1-45b3-9949-296f69f56d91)
+
 </td>
 <td width="50%">
     
 ### 실시간 예측 시스템
-![realtime_prediction](https://github.com/user-attachments/assets/your-prediction-gif)
+![제목 없는 디자인 (1)](https://github.com/user-attachments/assets/2b75d794-c021-43f1-bc70-34b64a13b1af)
+
 </td>
 </tr>
 </table>
@@ -17,14 +19,16 @@
 <table>
 <tr>
 <td width="50%">
-    
-### 데이터 크롤링 과정
-![crawling_process](https://github.com/user-attachments/assets/your-crawling-gif)
+
+### 실시간 예측 시스템
+![제목 없는 디자인 (2)](https://github.com/user-attachments/assets/02c4632c-ee4d-460b-bd4e-c7655be2bf5b)
+
 </td>
 <td width="50%">
     
-### 모델 학습 시각화
-![model_training](https://github.com/user-attachments/assets/your-training-gif)
+### 실시간 예측 시스템 
+![제목 없는 디자인 (3)](https://github.com/user-attachments/assets/2ce26b42-8fd0-41b4-ba55-89cf90911a58)
+
 </td>
 </tr>
 </table>
